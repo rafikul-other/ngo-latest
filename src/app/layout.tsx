@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/navbar/page";
 import Footer from "../components/footer/page";
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import RouteTransition from "@/components/loader/page";
 
 const poppins = Poppins({
@@ -27,9 +27,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} font-sans antialiased`}
       >
-        <Suspense fallback={null}>
+        {/* <Suspense fallback={null}> */}
         <RouteTransition />
-        </Suspense>
+        {/* </Suspense> */}
         <Navbar/>
         {children}
         <Footer/>
